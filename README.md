@@ -35,11 +35,10 @@ autonomous litter collection functions becomes an urgent need.
 3. **Path-planning** module: enables the robot to build an optimal(or sub-optimal) path for visiting the detected within the working environment litter objects for subsequent collection. The detailed descritpion of how the module works can be found in the dedicated folder.
 **Methods:** Genetic algorithm for solving Travelling Salesman Person problem.
 
-*Here I should insert a diagram of how the subsystems interact*
 
 ### Kuka Youbot specifications:
 
-*Image of how Kuka Youbot looks in real-life*
+![Real-world Kuka Youbot](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/5e6738a5-8ca3-4af4-a864-54529d337f2c)
 
 Mobile base:
 
@@ -50,7 +49,8 @@ Mobile base:
 * Connection protocol - EtherCad
 * Supply voltage – 24 V
 
-*Shematic image of the mobile base*
+![чертеж мобильной платформы](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/ddc8466d-1ad4-4655-a929-3c76510f34b6)
+
 
 Robotic arm:
 
@@ -63,7 +63,8 @@ Robotic arm:
 * Supply voltage – 24 V
 * Axial rotation speed – 90 deg/s
 
-*Shematic image of the robot's arm*
+![Рабочая область манипулятора](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/3a0446e6-73f7-4eee-a03f-3f27d7b19d17)
+
 
 Hardware and sensors:
 
