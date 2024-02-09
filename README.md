@@ -39,7 +39,8 @@ autonomous litter collection functions becomes an urgent need.
 
 ### Kuka Youbot specifications:
 
-*Image of how Kuka Youbot looks in real-life*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/e179cd59-2491-4ce8-b6bd-a1639e156629)
+
 
 Mobile base:
 
@@ -50,7 +51,8 @@ Mobile base:
 * Connection protocol - EtherCad
 * Supply voltage – 24 V
 
-*Shematic image of the mobile base*
+![чертеж мобильной платформы](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/ddc8466d-1ad4-4655-a929-3c76510f34b6)
+
 
 Robotic arm:
 
@@ -63,7 +65,8 @@ Robotic arm:
 * Supply voltage – 24 V
 * Axial rotation speed – 90 deg/s
 
-*Shematic image of the robot's arm*
+![Рабочая область манипулятора](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/bf900a87-def1-4470-b127-fcf8b21981eb)
+
 
 Hardware and sensors:
 
