@@ -41,7 +41,7 @@ autonomous litter collection functions becomes an urgent need.
 ![Real-world Kuka Youbot](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/61a0076b-4b57-4fb9-81a1-364aabf0e5e6)
 
 
-Mobile base:
+**Mobile base:**
 
 * Weight – 24 Kg
 * Dimensions (L x W x H) – 531 x 380 x 140 mm
@@ -53,7 +53,7 @@ Mobile base:
 ![чертеж мобильной платформы](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/ddc8466d-1ad4-4655-a929-3c76510f34b6)
 
 
-Robotic arm:
+**Robotic arm:**
 
 * Weight – 6.3 Kg
 * Height – 655 mm
@@ -67,7 +67,7 @@ Robotic arm:
 ![Рабочая область манипулятора](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/3a0446e6-73f7-4eee-a03f-3f27d7b19d17)
 
 
-Hardware and sensors:
+**Hardware and sensors:**
 
 * Camera(Visual sensor): Asus Xtion Pro with horizontal field-of-view of 58°, vertical field-of-view of 45°, 1240 х 1080 RGB and RGBD
 * Lidar 
