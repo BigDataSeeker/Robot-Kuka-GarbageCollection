@@ -64,8 +64,7 @@ Robotic arm:
 * Supply voltage – 24 V
 * Axial rotation speed – 90 deg/s
 
-![Рабочая область манипулятора](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/bf900a87-def1-4470-b127-fcf8b21981eb)
-
+![Рабочая область манипулятора](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/74f6e17a-09e7-49c0-91ec-f68e5b4ae2a4)
 
 Hardware and sensors:
 
