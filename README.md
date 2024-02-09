@@ -35,7 +35,6 @@ autonomous litter collection functions becomes an urgent need.
 3. **Path-planning** module: enables the robot to build an optimal(or sub-optimal) path for visiting the detected within the working environment litter objects for subsequent collection. The detailed descritpion of how the module works can be found in the dedicated folder.
 **Methods:** Genetic algorithm for solving Travelling Salesman Person problem.
 
-*Here I should insert a diagram of how the subsystems interact*
 
 ### Kuka Youbot specifications:
 
