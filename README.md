@@ -1,7 +1,13 @@
 
 # Kuka Youbot for Autonomous Garbage Collection
 
-**In this repo I present the results of development of my final Bachelor thesis project. The goal is to develop the control system for Kuka Youbot that makes it capable of autonomous litter collection.** 
+**In this repo I present the results of development of my final Bachelor thesis project. The goal is to develop the control system for mobile robot Kuka Youbot that makes it capable of autonomous litter collection.** 
+
+A **dedicated paper** (English) was published upon the development of **Visual litter detection** subsystem and can be found by this link
+
+**ROS middleware** was used to control Kuka Youbot. The code for the control system and its subsytems is written in Python.
+
+*Here i should insert eye-catching .GIF showing on the same plane simultaneously how the robot visits litter in Lab, SLAM sys draws its trajectory while more detected litter spawn on the map, and then the visiting path is drawn on the map*
 
 ### System requirements. The robot should do:
 
@@ -11,22 +17,69 @@
 
 3. Given no initial knowledge about the number and locations of litter objects within the flat, static and no-obstacles environment, the robot should plan exploration path for detecting litter. Then, given the environment map it built during exploration phase the robot should find optimal path for visiting detected litter and visit litter objects as if it was meant to collect it. 
 
-
-*Here i should insert eye-catching .GIF showing on the same plane simultaneously how the robot visits litter in Lab, SLAM sys draws its trajectory while more detected litter spawn on the map, and then the visiting path is drawn on the map*
+*Here: Most impressive images and GIFs of any system and subsystem workflow*
 
 ## Gentle introduction:
 At present, increasing rates of pollution of vast areas by various types of household waste are becoming
 an increasingly serious problem. In this connection, the creation of a robotic complex capable of performing
 autonomous litter collection functions becomes an urgent need.
 
-The robotic control system has the following compotents:
+### The robotic control system has the following compotents:
 
-1.  **Computer Vision** module enabling the robot of detecting litter objects within its monocular camera field-of-view and mapping the objects on the working environment reference system. 
+1.  **Computer Vision** module enabling the robot of detecting litter objects within its monocular camera field-of-view and mapping the objects on the working environment reference system. The detailed descritpion of how the module works can be found in the dedicated folder.  
 **Methods:** YOLOv5 for litter detection and Homography for coordinates reconstruction.
 
-2. **SLAM** module: enables the robot to simultaneously build the map of unknown working environment and localize itself on the map.
+2. **SLAM** module: enables the robot to simultaneously build the map of unknown working environment and localize itself on the map.The detailed descritpion of how the module works can be found in the dedicated folder.
 **Methods:** Extended Kalman Filter with feedback from odometry and litter objects as visual landmarks
 
-3. **Path-planning** module: enables the robot to build an optimal(or sub-optimal) path for visiting the detected within the working environment litter objects for subsequent collection. 
+3. **Path-planning** module: enables the robot to build an optimal(or sub-optimal) path for visiting the detected within the working environment litter objects for subsequent collection. The detailed descritpion of how the module works can be found in the dedicated folder.
 **Methods:** Genetic algorithm for solving Travelling Salesman Person problem.
+
+*Here I should insert a diagram of how the subsystems interact*
+
+### Kuka Youbot specifications:
+
+*Image of how Kuka Youbot looks in real-life*
+
+Mobile base:
+
+* Weight – 24 Kg
+* Dimensions (L x W x H) – 531 x 380 x 140 mm
+* Degrees of freedom – 3 
+* Load Capacity – 20 Kg
+* Connection protocol - EtherCad
+* Supply voltage – 24 V
+
+*Shematic image of the mobile base*
+
+Robotic arm:
+
+* Weight – 6.3 Kg
+* Height – 655 mm
+* Number of axes – 5
+* Type of gripping device – gripping with two plates
+* Load Capacity – 0.5 Kg
+* Positioning accuracy – 1 mm
+* Supply voltage – 24 V
+* Axial rotation speed – 90 deg/s
+
+*Shematic image of the robot's arm*
+
+Hardware and sensors:
+
+* Camera(Visual sensor): Asus Xtion Pro with horizontal field-of-view of 58°, vertical field-of-view of 45°, 1240 х 1080 RGB and RGBD
+* Lidar 
+* odometry wheel sensors
+* On-board PC: CPU Intel Atom D510 1.66 GHz, RAM 2 GB SO-DDR2-667 200PIN, SSD 32 GB, 6 USB 2.0 ports, Ubuntu OS
+* Communication protocol - TCP
+
+
+
+As **the result** the control system for mobile robot for area cleanup was developed. It enables the robot to autonomously explore unknown enviroment, detect litter objects and optimally visit them for collection. One of the system's advantage is that it doesn't require exteral global or local positioning systems that makes able to work inside and within the noisy electromagnetic environments. 
+
+**Further improvements:**
+
+* Development of the subsystem robotic arm control
+* Development of the path-planning subsystem that makes the robot able to work within dynamic environment with obstacles
+
 
