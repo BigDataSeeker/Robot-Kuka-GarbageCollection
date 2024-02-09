@@ -26,7 +26,7 @@ autonomous litter collection functions becomes an urgent need.
 
 ### The robotic control system has the following compotents:
 
-1.  **Computer Vision** module enabling the robot of detecting litter objects within its monocular camera field-of-view and mapping the objects on the working environment reference system. The detailed descritpion of how the module works can be found in the dedicated folder.  
+1.  **Computer Vision** module enabling the robot of detecting and classfication litter objects within its monocular camera field-of-view and mapping the objects on the working environment reference system. The detailed descritpion of how the module works can be found in the dedicated folder.  
 **Methods:** YOLOv5 for litter detection and Homography for coordinates reconstruction.
 
 2. **SLAM** module: enables the robot to simultaneously build the map of unknown working environment and localize itself on the map.The detailed descritpion of how the module works can be found in the dedicated folder.
@@ -74,8 +74,8 @@ Hardware and sensors:
 * Communication protocol - TCP
 
 
-
-As **the result** the control system for mobile robot for area cleanup was developed. It enables the robot to autonomously explore unknown enviroment, detect litter objects and optimally visit them for collection. One of the system's advantage is that it doesn't require exteral global or local positioning systems that makes able to work inside and within the noisy electromagnetic environments. 
+### Result
+The control system for mobile robot for area cleanup was developed. It enables the robot to autonomously explore unknown enviroment, detect litter objects and optimally visit them for collection. One of the system's advantage is that it doesn't require exteral global or local positioning systems that makes able to work inside and within the noisy electromagnetic environments. 
 
 **Further improvements:**
 
