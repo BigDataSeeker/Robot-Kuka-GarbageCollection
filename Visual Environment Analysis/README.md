@@ -17,7 +17,7 @@ Within the framework of the proposed structure of external environment visual an
 coordinates of objects on the ground, a homography matrix was formed to take into account information about the
 characteristics and location of the video camera.
 
-![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/1751f271-43de-4ca4-bb3f-1b40eb6c9863)
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/2684102a-672f-4647-915e-9a238260b44d)
 
 
 ### Results. 
@@ -76,7 +76,7 @@ The half-width of the near edge of the visible space w_f, the half-width of the 
 
 According to the aforesaid, the coordinates of objects relative to the robot are defined by the following ratios:
 
-![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/618b6e7f-f6a4-4a31-8002-922c884d7a14)
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/9926743f-10a0-406b-9dd6-27a7f486e408)
 
 ### SOFTWARE STRUCTURE
 
