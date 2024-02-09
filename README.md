@@ -39,8 +39,7 @@ autonomous litter collection functions becomes an urgent need.
 
 ### Kuka Youbot specifications:
 
-![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/e179cd59-2491-4ce8-b6bd-a1639e156629)
-
+![Real-world Kuka Youbot](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/5e6738a5-8ca3-4af4-a864-54529d337f2c)
 
 Mobile base:
 
