@@ -26,13 +26,13 @@ autonomous litter collection functions becomes an urgent need.
 
 ### The robotic control system has the following compotents:
 
-1.  **Computer Vision** module enabling the robot of detecting and classfication litter objects within its monocular camera field-of-view and mapping the objects on the working environment reference system. The detailed descritpion of how the module works can be found in the dedicated folder.  
+1.  **Computer Vision** subsystem enabling the robot of detecting and classfication litter objects within its monocular camera field-of-view and mapping the objects on the working environment reference system. The detailed descritpion of how the subsystem works can be found in the dedicated folder.  
 **Methods:** YOLOv5 for litter detection and Homography for coordinates reconstruction.
 
-2. **SLAM** module: enables the robot to simultaneously build the map of unknown working environment and localize itself on the map.The detailed descritpion of how the module works can be found in the dedicated folder.
+2. **SLAM** subsystem: enables the robot to simultaneously build the map of unknown working environment and localize itself on the map.The detailed descritpion of how the subsystem works can be found in the dedicated folder.
 **Methods:** Extended Kalman Filter with feedback from odometry and litter objects as visual landmarks
 
-3. **Path-planning** module: enables the robot to build an optimal(or sub-optimal) path for visiting the detected within the working environment litter objects for subsequent collection. The detailed descritpion of how the module works can be found in the dedicated folder.
+3. **Path-planning** subsystem: enables the robot to build an optimal(or sub-optimal) path for visiting the detected within the working environment litter objects for subsequent collection. The detailed descritpion of how the subsystem works can be found in the dedicated folder.
 **Methods:** Genetic algorithm for solving Travelling Salesman Person problem.
 
 
