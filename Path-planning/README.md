@@ -1,7 +1,10 @@
 
 # Path-planning subsystem for mobile robot executing area cleanup
 
-**The purpose is to develop the underlying path-planning algorithm for mobile robot executing area cleaning functions. This considers a system for an autonomous mobile robot to  1) plan an exploration movement trajectory in a rectangular area of given size to detect all litter objects of initially unknown locations and amount 2) Plan an optimal visiting trajectory of all the detected litterings for subsequent collection. The environment is flat, static and without obstacles.** 
+**The purpose is to develop the underlying path-planning algorithm for mobile robot executing area cleaning functions. This considers a system for an autonomous mobile robot to:**  
+
+1) plan an exploration movement trajectory in a rectangular area of given size to detect all litter objects of initially unknown locations and amount
+2) Plan an optimal visiting trajectory of all the detected litterings for subsequent collection. The environment is flat, static and without obstacles. 
 
 
 *Here: .GIF/image from video demo of presentation*
