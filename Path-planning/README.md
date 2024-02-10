@@ -32,13 +32,14 @@ The task of planning the exploration trajectory is to form a path in which the r
 
 The input is the size of the rectangular area to be cleaned. The area is divided into Nh х Nw sections: Nh - the number of vertical sections, Nw - the number of horizontal sections.
 
-*Here: eq. 4.3-4.9 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/689bee6c-c6b8-4b10-ab76-c433d55eb265)
 
 where H, W – height and width of the area to be cleaned, set by the user; wr - half the width of the robot's field of view; ℎ𝑠 – height of each section; 𝑛𝑤 – the number of vertical movements within one row of sections; 𝑑𝑤 – the horizontal step of the snake-like trajectory; 𝑤𝑠𝑓 – width of sections; 𝑤𝑠𝑒 – the width of the last section in the course of the robot's movement, within the same row.
 
-*Here: fig. 4.6 from thesis*
+![terrain_snake_exploration_planning](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/d62b36f1-e2fd-405c-bfed-4f225d979b1c)
 
-*Here: fig. 4.7 from thesis thranslated in English*
+![sector_moving_alg_flowchart_ENG](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/013f2a6d-7d59-4ba1-906b-e57bc728fd0a)
+
 
 ##  Planning of litter objects visiting path (Travelling Salesman problem):
 
@@ -53,11 +54,12 @@ The input for Genetic algorithm is the location of the robot and the location of
 1. *Solution encoding*: each population individual is encoded as ordered sequence of litterings' locations. It represents the order how the robot visits them. 
 2. *Mutation*: implements random permutation of litterings' locations such that the user can set the max sequence distance coefficient of the swapped objects. 
 
-*Here: fig. 4.4 from the thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/a264d754-9eff-44c8-86ac-c178aa060736)
 
 3. *Crossvoer*: random subsequence A is chosen from the first solution, subsequence B consists of the litterings not present in A in the order how they appear in the second solution. The crossover result is the concatenation of A and B s.t. a subsequence having a location ordered first is put to the result beginning.
 
-*Here: fig. 4.4 from the thesis in Eng*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/0746d2fb-4a56-4f89-87b4-07fc349c3fb1)
+
 
 4. *Fitness function*: the inverse length of visiting path
 
@@ -68,8 +70,9 @@ The input for Genetic algorithm is the location of the robot and the location of
 
 ### SOFTWARE STRUCTURE
 
-The software includes a subsystem of the user interface, interaction with the Vision analysis and SLAM subsystems  and third-party applications, as well as modules for planning the exploration trajectory through the enviroment and the litter objects visisting path for a mobile robot.
+The software includes a subsystem of the user interface, interaction with the Vision analysis and SLAM subsystems  and third-party applications, as well as modules for planning the exploration trajectory through the enviroment and the litter objects visiting path for a mobile robot.
 
-*Here: fig 4.10 from the thesis in Eng*
+![path_planning_structure_ENG](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/9d22a9ee-ae9f-4b31-99ea-02c87ced3233)
+
 
 
