@@ -1,5 +1,5 @@
 
-# Computer vision system for mobile robot executing area cleanup
+# Computer vision subsystem for mobile robot executing area cleanup
 
 **The purpose is to develop the underlying algorithms for the vision system of robots executing area cleaning functions. This considers a visual environmental analysis system for an autonomous mobile robot to search for and recognize different categories of waste, and localize the litter in a given area for subsequent collection. For such purposes, it is sufficient for the robot to have a single on-board camera.** 
 
