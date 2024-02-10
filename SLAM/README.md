@@ -41,7 +41,8 @@ The developed software and algorithms for a mobile robot implement the functions
 
 In an experiment with 2 litter objects within the environment Kuka Youbot successfully detected them and added to the map while localizing itself and tracking own trajectory. 
 
-*Here: fig. 3.7 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/77e7ab60-4b91-4589-8b13-9aa7b3565a28)
+
 
 **The following is developed:**
 
@@ -71,15 +72,18 @@ time and calculate their local coordinates relative to the robot - assumed to be
 
 The image below illustrates global reference frame relative to the robot wake-up starting point and local reference frame relative to the robot's current position, where Rm - radius of robot arm reach
 
-*Here: fig. 3.1 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/a229af39-9b2a-459e-bb38-1eccf0dd7193)
+
 
 Local coordinates of the litter object O can be caculated as follows: 
 
-*Here: eq. 3.1 - 3.2 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/5eea87e0-eca6-44b4-bdc3-7afeda7300b6)
+
 
 Global coordinates of the litter object O can be caculated as: 
 
-*Here: eq. 3.3 - 3.4 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/9380920d-6052-498c-a108-610175718114)
+
 
 These solve tasks 3 and 5.
 
@@ -93,13 +97,15 @@ These solve tasks 3 and 5.
 
 In the phase of checking the location of an object in the robot's field-of-view, the range and bearing angle relative to the robot's camera are calculated from its local coordinates. The range and bearing angle are used to check the clauses of a litter object to be the robot's field-of-view: 
 
-*Here: eq. 3.5 - 3.8 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/0e732b41-17b2-4c3e-bb16-afd8c50e54b9)
+
 
 where r и β - range and bearing angle relative to the robot's camera, respectively; 𝑑𝑓, 𝑑𝑟, ɣ - distance from the camera to the closest and farest borders of robot's field-of-view and horizontal camera opening angle, respectively
 
 In the phase of matching detected objects with known ones each detected object is checked for matching with each known object that should lie in the robot's field-of-view until there's a match. The threshold of 0.15 is set considering that there's inaccuracy when local coordinates of known objects are calculated from the global ones.
 
-*Here: eq. 3.9 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/fcf5166f-5778-485f-98bc-eb1dffc0b515)
+
 
 where x_o_det, y_o_det - local coordinates of the object detected in the field-of-view; x_o_pred, y_o_pred - local coordinates of the object that should be in the field-of-view
 
@@ -130,21 +136,25 @@ In the context of mobile robot localization **Extended Kalman Filter** uses the 
 
 **In the phase of estimation the location of the robot based on the velocity control vector** in the previous time-step the location at current time-step is estimated as follows:
 
-*Here: eq. 3.10 - 3.12 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/22cf0852-21d0-4bb7-9402-11015c19c7fa)
 
-*Here: fig. 3.3 from thesis*
+
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/a366457e-4cb5-4baa-aafa-79fa3100a8be)
+
 
 where 𝑈_𝑡−1, 𝜔_𝑡−1 - velocity control vector(linear and angular velocities, respectively); l - robot length; x, y, 𝛩 - x-axis, y-axis global coordinates and bearing angle, respectively.
 
 The covariance matrix is estimated according to:
 
-*Here: eq. 3.13 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/ec2a0bb8-39e1-464e-9aeb-ae4e4fa25be5)
+
 
 where P_t, P_t-1 - covariance matrices of the robot location at the current and previous time-steps, respectively; F_t - process evolution matrix that is 3x3 Identity matrix, Q_t - noise covariance matrix that is 3x3 diagonal with 0.5 on the main diagonal in this context.
 
 **In the phase of fusing the estimated robot location with the measurements from the wheel odometry** the location estimated in the previous phase is averaged with odometry measurements(i.e. robot global coordinates) according to:
 
-*Here: eq. 3.14 - 3.17 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/0ad10080-4c42-42a9-8a14-a80331f67764)
+
 
 where x, y, 𝛩 - x-axis, y-axis global coordinates and bearing angle, respectively; l - robot length; dx, dy, d𝜔 - difference of odometry measurments at current time-step wrt previous time-step.
 
@@ -152,11 +162,13 @@ where x, y, 𝛩 - x-axis, y-axis global coordinates and bearing angle, respecti
 
 For each identified object 𝑌_𝑡, 𝐻_𝑡, 𝑆_𝑡 ,𝐾_t, x_o_rel, y_o_rel are calculated:
 
-*Here: eq. 3.18 - 3.21 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/6ec9a5c7-e4f3-4f7b-81b1-515c5f518bc9)
+
 
 The corrections are fused with the robot location vector and its covariance matrix as below:
 
-*Here: eq. 3.22 - 3.23 from thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/74ab283f-5d5f-4f53-bb3f-a49606374665)
+
 
 where **R_t** - covariance matrix of the measurement noise, **P_est_t** - the covariance matrix of robot location estimated at previous time-step, **w_t** - measurements inaccuracy vector of the Visual analysis subsystem for objects' local coordinates i.e. (0.05, 0.05) in this case, **Z_t** - the vector of actual measurements of local coordinates for detected and identified object, **Y_t** - the vector of difference between the actual sensors' measurements and the measurements from the sensors' math model, **K_t** - the matrix of Kalman coefficients showing how much each location vector component should be corrected accounting for real sensors' measuremens, **S_t** - the covariance matrix of the math model predicting sensors' measuremens and showing how accurate its measuremens predictions, **H_t** - the matrix of objects' local coordinates that if multiplied by the differnce vector between robot currect estimated location and estimated location at the previous time-step gives the differnce vector between sensor current measuremens and its measuremens at the previous time-step(consists of partial derivatives of sensor measurements math model wrt the components of robot location vector)   
 
@@ -165,7 +177,8 @@ where **R_t** - covariance matrix of the measurement noise, **P_est_t** - the co
 
 The subsystem software includes a user interface, modules for receiving and processing wheel odometry, as well as mapping and localization modules for a mobile robot.
 
-*Here: fig. 3.8 from thesis in ENG*
+![slam_software_structure_ENG](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/a8a68eb5-cfa1-440c-91aa-2379aca6b746)
+
 
 
 
