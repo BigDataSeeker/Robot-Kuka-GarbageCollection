@@ -16,7 +16,7 @@ The problem of determining optimal visiting path of the detected litterings is T
 
 The robot should plan an exploration movement trajectory in the area to detect all litter objects of initially unknown locations and amount. To solve this the robot moves through the enviroment as follows: moving in the section along snake-like trajectory, visiting litter objects, moving to an adjacent section.
 
-*Here: figures 4.2, 4.3, 4.9 from the thesis*
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/8fc2a6ab-37d1-47fa-8a55-73e8c2ac15ca)
 
 ### Results. 
 The developed software and algorithms for a mobile robot implement the functions of planning optimal movement trajectory for enviroment exploration and visiting litterings for collection.
