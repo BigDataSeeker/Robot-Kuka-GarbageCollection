@@ -75,6 +75,11 @@ autonomous litter collection functions becomes an urgent need.
 * On-board PC: CPU Intel Atom D510 1.66 GHz, RAM 2 GB SO-DDR2-667 200PIN, SSD 32 GB, 6 USB 2.0 ports, Ubuntu OS
 * Communication protocol - TCP
 
+## Experiments
+
+### CompeliaSim simulation
+
+### Real Kuka Youbot deployment
 
 ### Result
 The control system for mobile robot for area cleanup was developed. It enables the robot to autonomously explore unknown enviroment, detect litter objects and optimally visit them for collection. One of the system's advantage is that it doesn't require exteral global or local positioning systems that makes able to work inside and within the noisy electromagnetic environments. 
@@ -83,5 +88,4 @@ The control system for mobile robot for area cleanup was developed. It enables t
 
 * Development of the subsystem robotic arm control
 * Development of the path-planning subsystem that makes the robot able to work within dynamic environment with obstacles
-
 
