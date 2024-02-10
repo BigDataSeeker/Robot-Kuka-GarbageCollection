@@ -9,7 +9,7 @@
 
 2) localize itself on the environment map. The environment is flat, static and without obstacles. 
 
-*Here: GIFs from coppelia_exp_snake_trajectory_3obj videos*
+![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/coppelia_exp_snake_trajectory_3obj/experiment_GIF.gif)
 
 
 ### Requirements.
