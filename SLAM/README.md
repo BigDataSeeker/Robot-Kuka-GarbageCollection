@@ -19,18 +19,27 @@ Given no initial knowledge about the working environment and robot location on i
 
 ### Methods. 
 
-Mapping - its phases
+The problem of navigating a mobile robot within the initially unknown environment with unknown initial wake-up coordinate boils down to solving SLAM problem. Within this framework, the workflow is divided into two alternating processes i.e. building the environment map and simulateneosly localizing the robot on it.
 
-Lacalization - EKF
+To solve localization problem, **Extended Kalman Filter** with feedback from visual landmarks is used, since it is an effective recursive filter that evaluates the state vector of a dynamic system using a number of incomplete and noisy measurements. To calculate the current state of the system, the current measurement and previous state of the filter itself are used such that state vector distribution is updated every step.
 
+The following tasks are to be solved in order to **build environment map**:
 
-*Here: figures ...*
+1. Detect litterings lying in the robot's field of view - assumed being solved by the robot Visual analysis subsystem
+
+2. Determine the robot global coordinates - assumed being solved by the self-localization module of the robot SLAM subsystem
+
+3. Calculate local coordinates of the objects already known and mapped in the reference frame relative to the robot and determine which of them should lie in the robot's field of view.
+
+4. Identify detected objects with already known and mapped ones
+
+5. Put it on the map litter objects that are not yet on the map
 
 ### Results. 
 
 The developed software and algorithms for a mobile robot implement the functions of building the environment map while simultaneously localizing the robot on it. 
 
-In an experiment with 2 litter objects on the environment Kuka Youbot successfully detected them and added to the map while localizing itself and tracking own trajectory. 
+In an experiment with 2 litter objects within the environment Kuka Youbot successfully detected them and added to the map while localizing itself and tracking own trajectory. 
 
 *Here: fig. 3.7 from thesis*
 
@@ -52,9 +61,9 @@ The problem of buiding the environment map is to add detected litter objects on 
 1. Detect litterings lying in the robot's field of view at current
 time and calculate their local coordinates relative to the robot - assumed to be solved by the robot Visual analysis subsystem
 
-2. Determine the global robot coordinates at current time in the reference frame relative to the robot wake-up starting point - assumed to be solved by the self-localization module of the robot SLAM subsystem
+2. Determine the robot global coordinates at current time in the reference frame relative to the robot wake-up starting point - assumed to be solved by the self-localization module of the robot SLAM subsystem
 
-3. In accordance with the global robot coordinates, for objects already known and mapped, calculate their local coordinates in the reference frame relative to the robot and determine which of them should lie in the robot's field of view.
+3. In accordance with the robot global coordinates, for objects already known and mapped, calculate their local coordinates in the reference frame relative to the robot and determine which of them should lie in the robot's field of view.
 
 4. Solve the problem of identifying detected objects with already known and mapped objects that should lie in the field of view of the robot
 
@@ -98,8 +107,6 @@ where x_o_det, y_o_det - local coordinates of the object detected in the field-o
 ## Localization of the robot within the environment:
 
 The problem of robot localization is to localize it on the environment map at each time step.
-
-To solve this problem, **Extended Kalman Filter** is used, since it is an effective recursive filter that evaluates the state vector of a dynamic system using a number of incomplete and noisy measurements. To calculate the current state of the system, the current measurement and previous state of the filter itself are used such that state vector distribution is updated every step. 
 
 In the context of mobile robot localization **Extended Kalman Filter** uses the measurements of robot odometry and the measurements of litter objects local coordinates in the robot's field-of-view as visual landmarks. In this work the coordinates of robot's camera center are estimated as robot's coordinates in order to simplify the localization framework. The material point coordinates to be estimated is the camera center because objects local coordinates are calculated relative to camera and the camera center coinsides with the robot's grasper. 
 
