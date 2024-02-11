@@ -11,6 +11,7 @@ A **dedicated paper** (English) was published upon the development of **Visual l
 ### System requirements. The robot should do:
 
 1. Given a monocular RGB camera mounted on the Kuka Youbot arm, the Robot should be able to detect litter objects and map them on the working environment reference frame
+![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Visual%20Environment%20Analysis/VisualAnalysisSystemWorkflow.png)
 
 2. Given no knowledge about its initial location, the robot should explore unknown working environment detecting and mapping litter objects while simultaneously localizing itself within the environment. The working environment is flat, static and without obstacles.   
 
