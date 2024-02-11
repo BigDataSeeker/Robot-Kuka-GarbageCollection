@@ -13,9 +13,9 @@ A **dedicated paper** (English) was published upon the development of **Visual l
 1. Given a monocular RGB camera mounted on the Kuka Youbot arm, the Robot should be able to detect litter objects and map them on the working environment reference frame
 ![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Visual%20Environment%20Analysis/VisualAnalysisSystemWorkflow.png)
 
-2. Given no knowledge about its initial location, the robot should explore unknown working environment detecting and mapping litter objects while simultaneously localizing itself within the environment. The working environment is flat, static and without obstacles.![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/8fc2a6ab-37d1-47fa-8a55-73e8c2ac15ca)   
+2. Given no knowledge about its initial location, the robot should explore unknown working environment detecting and mapping litter objects while simultaneously localizing itself within the environment. The working environment is flat, static and without obstacles.![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/coppelia_exp_snake_trj_2sections_2obj/trj_after_2section_exlr.png)   
 
-3. Given no initial knowledge about the number and locations of litter objects within the flat, static and no-obstacles environment, the robot should plan exploration path for detecting litter. Then, given the environment map it built during exploration phase the robot should find optimal path for visiting detected litter and visit litter objects as if it was meant to collect it. 
+3. Given no initial knowledge about the number and locations of litter objects within the flat, static and no-obstacles environment, the robot should plan exploration path for detecting litter. Then, given the environment map it built during exploration phase the robot should find optimal path for visiting detected litter and visit litter objects as if it was meant to collect it.![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/8fc2a6ab-37d1-47fa-8a55-73e8c2ac15ca) 
 
 #### coppeliaSim experiment
 
