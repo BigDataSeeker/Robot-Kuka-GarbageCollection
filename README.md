@@ -19,6 +19,7 @@ A **dedicated paper** (English) was published upon the development of **Visual l
 ![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/tree/main/Experiments/coppelia_exp_snake_trj_2sections_2obj)
 
 ![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/real_Youbot_exp_snake_trajectory_2obj/Experiment_GIF.gif)
+
 ## Gentle introduction:
 At present, increasing rates of pollution of vast areas by various types of household waste are becoming
 an increasingly serious problem. In this connection, the creation of a robotic complex capable of performing
