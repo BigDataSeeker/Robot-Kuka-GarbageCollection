@@ -1,3 +1,4 @@
+Use ![nbviewer](https://nbviewer.org/) if .ipynb are not redered properly by github
 
 # SLAM subsystem for mobile robot executing area cleanup
 
