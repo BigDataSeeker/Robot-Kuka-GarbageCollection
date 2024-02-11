@@ -39,6 +39,8 @@ The following tasks are to be solved in order to **build environment map**:
 
 See ![experiments folder](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/tree/main/Experiments) for Real Kuka Youbot deployment and CompeliaSim experiments
 
+![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/real_Youbot_exp_snake_trajectory_2obj/Experiment_GIF.gif)
+
 The developed software and algorithms for a mobile robot implement the functions of building the environment map while simultaneously localizing the robot on it. 
 
 In an experiment with 2 litter objects within the environment Kuka Youbot successfully detected them and added to the map while localizing itself and tracking own trajectory. 
