@@ -18,7 +18,7 @@ A **dedicated paper** (English) was published upon the development of **Visual l
 
 #### coppeliaSim experiment
 
-![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/real_Youbot_exp_snake_trajectory_2obj/Experiment_GIF.gif)
+![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/tree/main/Experiments/coppelia_exp_snake_trj_2sections_2obj)
 
 ## Gentle introduction:
 At present, increasing rates of pollution of vast areas by various types of household waste are becoming
