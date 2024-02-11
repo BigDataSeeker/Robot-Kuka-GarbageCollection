@@ -22,6 +22,9 @@ The robot should plan an exploration movement trajectory in the area to detect a
 ![image](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/assets/92204945/8fc2a6ab-37d1-47fa-8a55-73e8c2ac15ca)
 
 ### Results. 
+
+See ![experiments folder](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/tree/main/Experiments) for Real Kuka Youbot deployment and CompeliaSim experiments
+
 The developed software and algorithms for a mobile robot implement the functions of planning optimal movement trajectory for enviroment exploration and visiting litterings for collection.
 
 The correct trajectories of the mobile robot's movement through the environment and litter visiting were obtained while correctly divided into sections. In addition, the system has shown its effectiveness in various geometric configurations of the area to be cleaned.
