@@ -1,3 +1,4 @@
+Use ![nbviewer](https://nbviewer.org/) if .ipynb are not redered properly by github
 
 # Computer vision subsystem for mobile robot executing area cleanup
 
