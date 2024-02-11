@@ -7,7 +7,7 @@
 2) Plan an optimal visiting trajectory of all the detected litterings for subsequent collection. The environment is flat, static and without obstacles. 
 
 
-*Here: .GIF/image from video demo of presentation*
+![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/coppelia_exp_snake_trj_2sections_2obj/Two%20sections%20exploration%20narrated_ENG.gif.gif)
 
 ### Requirements.
 Given the size and aspect ratio of working enviroment that is flat, static and without obstacles the system should:
