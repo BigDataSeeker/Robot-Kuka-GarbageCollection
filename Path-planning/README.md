@@ -1,3 +1,4 @@
+Use ![nbviewer](https://nbviewer.org/) if .ipynb are not rendered properly by github
 
 # Path-planning subsystem for mobile robot executing area cleanup
 
