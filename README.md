@@ -16,10 +16,6 @@ A **dedicated paper** (English) was published upon the development of **Visual l
 
 3. Given no initial knowledge about the number and locations of litter objects within the flat, static and no-obstacles environment, the robot should plan exploration path for detecting litter. Then, given the environment map it built during exploration phase the robot should find optimal path for visiting detected litter and visit litter objects as if it was meant to collect it. 
 
-#### Real Kuka Youbot deployment
-
-![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/tree/main/Experiments/coppelia_exp_snake_trj_2sections_2obj)
-
 #### coppeliaSim experiment
 
 ![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/real_Youbot_exp_snake_trajectory_2obj/Experiment_GIF.gif)
