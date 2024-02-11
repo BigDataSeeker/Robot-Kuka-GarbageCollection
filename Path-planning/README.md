@@ -30,7 +30,7 @@ The developed software and algorithms for a mobile robot implement the functions
 The correct trajectories of the mobile robot's movement through the environment and litter visiting were obtained while correctly divided into sections. In addition, the system has shown its effectiveness in various geometric configurations of the area to be cleaned.
 
 
-*Here: GIFs from coppelia_exp_snake_trj_2sections_2obj videos*
+![](https://github.com/BigDataSeeker/Robot-Kuka-GarbageCollection/blob/main/Experiments/real_Youbot_exp_snake_trajectory_2obj/Experiment_GIF.gif)
 
 ## Environment exploration reference trajectory planning:
 
