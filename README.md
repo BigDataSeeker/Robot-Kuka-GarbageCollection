@@ -1,7 +1,7 @@
 
 # Kuka Youbot for Autonomous Garbage Collection
 
-**In this repo I present the results of development of my final Bachelor thesis project. The goal is to develop the control system for mobile robot Kuka Youbot that makes it capable of autonomous litter collection.** 
+**In this repo I present the results of the development of my final Bachelor thesis project. The goal is to develop the control system for mobile robot Kuka Youbot that makes it capable of autonomous litter collection.** 
 
 A **dedicated paper** (English) was published upon the development of **Visual litter detection** subsystem and can be found by this [link](https://www.rtj-mirea.ru/jour/article/view/732/489)
 
