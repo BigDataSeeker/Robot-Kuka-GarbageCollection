@@ -3,7 +3,7 @@
 
 **In this repo I present the results of the development of my final Bachelor thesis project. The goal is to develop the control system for mobile robot Kuka Youbot that makes it capable of autonomous litter collection.** 
 
-A **dedicated paper** (English) was published upon the development of **Visual litter detection** subsystem and can be found by this [link](https://www.rtj-mirea.ru/jour/article/view/732/489)
+A **dedicated [paper](https://www.rtj-mirea.ru/jour/article/view/732/489)** (English) was published upon the development of **Visual litter detection** subsystem. 
 
 **ROS middleware** was used to control Kuka Youbot. The code for the control system and its subsytems is written in Python.
 
